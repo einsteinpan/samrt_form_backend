@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>AI助理</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap')
+        </style>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div id="nav-container">
+    <h1 id="nav-title">AI農業助理</h1> <!-- 添加標題 -->
+    <a href="page1.html" class="nav-button">首頁</a>
+    <a href="page2.html" class="nav-button">控制台</a>
+    <a href="page3.html" class="nav-button">農業助理</a>
+</div>
+
+    <div id="chat-container">
+        <div id="chat-history">
+            <ul id="chat-messages"></ul>
+        </div>
+        <div id="chat-form">
+            <input type="text" id="chat-input" placeholder="輸入您的問題" onkeydown="if(event.key === 'Enter'){sendMessage();}">
+            <button id="send-button" onclick="sendMessage()">發送</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
